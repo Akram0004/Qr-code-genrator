@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <!-- Include Bootstrap for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" />
+    <!-- Link to custom CSS file -->
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="card shadow p-4">
+                    <h3 class="text-center mb-4">QR Code Generator</h3>
+                    <div class="input-group mb-3">
+                        <input type="text" id="content" class="form-control" placeholder="Enter URL or Message" aria-label="Enter URL or Message" aria-describedby="generate-btn">
+                        <button class="btn btn-primary" type="button" id="generate-btn">Generate</button>
+                    </div>
+                    <div class="text-center">
+                        <!-- Placeholder image for QR code -->
+                        <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0" class="qr-code img-thumbnail" alt="QR Code">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Link to custom JavaScript file -->
+    <script src="scrip.js"></script>
+</body>
+
+</html>
